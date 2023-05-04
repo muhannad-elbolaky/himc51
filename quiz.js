@@ -11,6 +11,8 @@ let score = 0;
 let questionCounter = 0;
 let availbleQuestions = [];
 
+console.log(questions.length);
+
 const startQuiz = () => {
   questionCounter = 0;
   score = 0;
