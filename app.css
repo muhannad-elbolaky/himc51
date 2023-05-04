@@ -23,6 +23,7 @@
 /* *Resets */
 * {
   box-sizing: border-box;
+  line-height: 1.4;
   font-family: 'Readex Pro', sans-serif;
 
   margin: 0;

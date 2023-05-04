@@ -1,16 +1,8 @@
 [
   {
-    "question": "Question",
-    "choice1": "Choice1",
-    "choice2": "Choice2",
-    "answer": 1
-  },
-  {
-    "question": "Question2",
-    "choice1": "Choice1",
-    "choice2": "Choice3",
-    "choice3": "Choice2",
-    "choice4": "Choice4",
+    "question": "السلوك الانساني هو تفاعل بين كل العمليات النفسية.",
+    "choice1": "صح",
+    "choice2": "خطأ",
     "answer": 1
   }
 ]
