@@ -37,7 +37,7 @@ let questions = [
   }
 ]
 
-startGame = () => {
+startQuiz = () => {
   questionCounter = 0;
   score = 0;
   availbleQuestions = [...questions];
@@ -101,4 +101,4 @@ incrementScore = number => {
   scoreText.innerText = score
 }
 
-startGame();
+startQuiz();

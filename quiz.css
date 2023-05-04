@@ -4,18 +4,12 @@
   width: 100%;
   font-size: 1.8rem;
   border: 0.1rem solid var(--accent-color);
+  border-radius: 1.3rem;
   background-color: var(--secondary-color);
 }
 
 .choice-container:hover {
   cursor: pointer;
-  transform: translateY(-0.1rem);
-  transition: transform 150ms;
-}
-
-.choice-prefix {
-  padding: 1.5rem 2.5rem;
-  background-color: var(--accent-color);
 }
 
 .choice-text {
