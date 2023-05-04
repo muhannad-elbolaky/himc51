@@ -3,6 +3,7 @@ const choices = Array.from(document.getElementsByClassName('choice-text'));
 const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
+import questions from "./questions.json" assert { type: "json" };
 
 let currentQuestion = {};
 let acceptingAnswer = false;
@@ -10,41 +11,14 @@ let score = 0;
 let questionCounter = 0;
 let availbleQuestions = [];
 
-let questions = [
-  {
-    question: "I",
-    choice1: "a",
-    choice2: "b",
-    choice3: "c",
-    choice4: "d",
-    answer: 1
-  },
-  {
-    question: "x",
-    choice1: "a",
-    choice2: "b",
-    choice3: "c",
-    choice4: "d",
-    answer: 2
-  },
-  {
-    question: "z",
-    choice1: "a",
-    choice2: "b",
-    choice3: "c",
-    choice4: "d",
-    answer: 3
-  }
-]
-
-startQuiz = () => {
+const startQuiz = () => {
   questionCounter = 0;
   score = 0;
   availbleQuestions = [...questions];
   getNewQuestion();
 };
 
-getNewQuestion = () => {
+const getNewQuestion = () => {
 
   if (availbleQuestions.length === 0) {
     localStorage.setItem('mostRecentScore', score);
@@ -64,6 +38,13 @@ getNewQuestion = () => {
   choices.forEach(choice => {
     const number = choice.dataset['number'];
     choice.innerText = currentQuestion['choice' + number]
+
+    if (currentQuestion['choice' + number]) {
+      choice.parentElement.style.visibility = "visible";
+      choice.innerHTML = currentQuestion['choice' + number];
+    } else {
+      choice.parentElement.style.visibility = "hidden";
+    }
   });
 
   availbleQuestions.splice(questionIndex, 1);
@@ -96,7 +77,7 @@ choices.forEach(choice => {
   });
 });
 
-incrementScore = number => {
+const incrementScore = number => {
   score += number
   scoreText.innerText = score
 }
