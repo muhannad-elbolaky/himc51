@@ -1,6 +1,6 @@
 {
 	"Create a new qeustion": {
-		"prefix": "ض",
+		"prefix": "ضض",
 		"body": [
 			"  ,{",
 			"    \"question\": \"${1:Question}\",",
@@ -8,6 +8,18 @@
 			"    \"choice2\": \"${3:Choice}\",",
 			"    \"choice3\": \"${4:Choice}\",",
 			"    \"choice4\": \"${5:Choice}\",",
+			"    \"answer\": ${6:Answer}",
+			"  }"
+		],
+		"description": "Create a new qeustion"
+	},
+	"Create a new qeustion 2 choices": {
+		"prefix": "ض",
+		"body": [
+			"  ,{",
+			"    \"question\": \"${1:Question}\",",
+			"    \"choice1\": \"صح\",",
+			"    \"choice2\": \"خطا\",",
 			"    \"answer\": ${6:Answer}",
 			"  }"
 		],
