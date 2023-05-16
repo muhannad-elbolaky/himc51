@@ -17,7 +17,6 @@
 
   background-color: var(--primary-color);
   font-size: 62.5%;
-  user-select: none;
 }
 
 /* *Resets */
@@ -111,8 +110,8 @@ h3 {
   width: 20rem;
   text-align: center;
   border: 0.1rem solid var(--accent-color);
-  border-radius: 3rem;
-  margin-bottom: 1rem;
+  border-radius: 1.2rem;
+  margin-bottom: 1.2rem;
   text-decoration: none;
   color: var(--accent-color);
   background-color: var(--secondary-color);
@@ -123,6 +122,12 @@ h3 {
   box-shadow: 0 0.4rem 1.4rem 0 rgba(75, 159, 255, 0.5);
   transform: translateY(-0.1rem);
   transition: transform 150ms;
+}
+
+.btn.warning {
+  color: #000;
+  background-color: #ffb02e;
+  border: none;
 }
 
 /* *Global */
@@ -138,17 +143,12 @@ footer {
 }
 
 .footer-content {
-  /* display: flex; */
-  justify-content: center;
-  flex-direction: column;
-  /* gap: 0.3rem; */
   text-align: center;
-  /* font-size: 1.4rem; */
+  font-size: 1.4rem;
   padding: 1rem 0;
 }
 
 .link-container {
-  width: 30%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -163,6 +163,6 @@ footer {
 
   padding: 2rem;
   border: 0.1rem solid var(--accent-color);
-  border-radius: 1.5rem;
+  border-radius: 1.2rem;
   background-color: var(--secondary-color);
 }

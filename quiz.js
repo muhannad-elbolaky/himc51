@@ -11,8 +11,6 @@ let score = 0;
 let questionCounter = 0;
 let availbleQuestions = [];
 
-console.log(questions.length);
-
 const startQuiz = () => {
   questionCounter = 0;
   score = 0;
@@ -74,7 +72,7 @@ choices.forEach(choice => {
     setTimeout(() => {
       selectedChoice.parentElement.classList.remove(classToApply)
       getNewQuestion();
-    }, 1000);
+    }, 800);
 
   });
 });
