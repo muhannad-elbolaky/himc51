@@ -22,7 +22,7 @@ const getNewQuestion = () => {
 
   if (availbleQuestions.length === 0) {
     localStorage.setItem('mostRecentScore', score);
-    return window.location.assign('/end.html');
+    return window.location.assign(window.location.pathname.replace(/\/[^/]*$/, "") + '/end.html');
   }
 
   questionCounter++;
@@ -72,7 +72,7 @@ choices.forEach(choice => {
     setTimeout(() => {
       selectedChoice.parentElement.classList.remove(classToApply)
       getNewQuestion();
-    }, 800);
+    }, 700);
 
   });
 });
