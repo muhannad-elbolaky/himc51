@@ -28,7 +28,7 @@ if (window.location.hostname !== "127.0.0.1") {
               "content": null,
               "embeds": [
                 {
-                  "title": "علم نفس",
+                  "title": "حقوق الانسان",
                   "color": 5814783,
                   "fields": [
                     {
