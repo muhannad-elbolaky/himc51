@@ -43,6 +43,7 @@ const getNewQuestion = () => {
     margin.style.marginBottom = "5";
   }
 
+  console.log(window.innerWidth);
 
   question.innerText = currentQuestion.question;
 
